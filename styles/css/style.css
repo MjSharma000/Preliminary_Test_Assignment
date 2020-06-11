@@ -1,0 +1,368 @@
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../fonts/Montserrat-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url("../fonts/Montserrat-ExtraBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url("../fonts/Montserrat-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Montserrat-ELight';
+  src: url("../fonts/Montserrat-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url("../fonts/Montserrat-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../fonts/Montserrat-Regular.otf") format("opentype"); }
+
+.navbar {
+  padding: 0; }
+
+.articles-section .articles-box-wrapper .articles-box p, .playlist-wrapper .playlist-content p, .playlist-wrapper .recommended-content p {
+  margin: 0; }
+
+.content-section {
+  padding: 50px 0; }
+
+.articles-section .articles-box-wrapper .articles-box .artist-icon, .articles-section .articles-box-wrapper .articles-box i, .playlist-wrapper .playlist-content .btn, .playlist-wrapper .playlist-content .songs-list li i, .playlist-wrapper .recommended-content i {
+  cursor: pointer; }
+
+.home-section .home-content .home-text, .home-section .home-content .home-action-wrapper .home-icons, .home-section .home-content .home-btn-action, .navbar .navbar-brand {
+  text-align: center; }
+
+.articles-section .articles-box-wrapper .articles-box i, .playlist-wrapper .recommended-content i {
+  display: inline-block; }
+
+.navbar .navbar-collapse, .articles-section .articles-box-wrapper .articles-box img, .playlist-wrapper img, .playlist-wrapper .recommended-content img {
+  width: 100%; }
+
+.navbar .navbar-collapse {
+  margin-left: auto; }
+
+body, .navbar .navbar-nav .nav-link {
+  font-weight: 300; }
+
+.playlist-wrapper .playlist-content .songs-list li {
+  font-weight: 300; }
+
+.navbar .navbar-brand .logo-text b, .articles-section .articles-box-wrapper .articles-box i, .playlist-wrapper .recommended-content i {
+  font-weight: 600; }
+
+.playlist-wrapper .playlist-info-wrapper .playlist-bg a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.playlist-wrapper .playlist-content .songs-list li {
+  display: flex;
+  justify-content: space-between; }
+
+.articles-section .articles-box-wrapper .articles-box i, .playlist-wrapper .recommended-content i {
+  border-radius: 50%; }
+
+.articles-section .articles-box-wrapper .articles-box, .playlist-wrapper .playlist-content, .playlist-wrapper .playlist-info-wrapper, .playlist-wrapper .recommended-content {
+  border-radius: 10px; }
+
+.home-section .home-content, .playlist-wrapper .playlist-info-wrapper .playlist-bg a {
+  z-index: 1; }
+
+.btn, .navbar .navbar-collapse .search-icon input {
+  border-radius: 25px;
+  padding: 5px 15px;
+  font-size: 14px; }
+
+.btn-primary {
+  background: #fff;
+  border-color: #fff;
+  color: #5F41B6;
+  width: 200px; }
+
+.btn-default {
+  background: transparent;
+  border: 1px solid #fff;
+  width: 200px;
+  color: #fff; }
+
+.btn-primary:hover {
+  background: #5F41B6;
+  color: #fff;
+  border-color: #5F41B6; }
+
+.btn-default:hover {
+  background: #fff;
+  color: #5F41B6; }
+
+.para {
+  color: #7B8591;
+  font-size: 13px;
+  font-family: 'Montserrat-Light'; }
+
+body {
+  font-family: 'Montserrat-ELight';
+  margin: 0;
+  padding: 0;
+  color: #3B3D40;
+  font-size: 15px; }
+
+.heading {
+  font-size: 32px;
+  font-family: 'Montserrat-ExtraBold'; }
+
+.title-container {
+  margin-bottom: 50px; }
+
+.home-section {
+  background: url("../../images/home-bg.jpg") center center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  min-height: 95vh; }
+  .home-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.8;
+    background: #4621AD; }
+  .home-section .home-content {
+    margin-top: 75px; }
+    .home-section .home-content .home-text h1 {
+      font-size: 28px;
+      font-family: 'Montserrat-ExtraBold'; }
+    .home-section .home-content .home-action-wrapper {
+      margin-top: 30px; }
+      .home-section .home-content .home-action-wrapper .home-icons img {
+        margin-bottom: 15px;
+        width: 30px; }
+      .home-section .home-content .home-action-wrapper .home-icons h3 {
+        font-family: 'Montserrat-Medium';
+        font-size: 16px; }
+      .home-section .home-content .home-action-wrapper .home-icons p {
+        font-size: 13px; }
+    .home-section .home-content .home-btn-action {
+      margin-top: 30px; }
+      .home-section .home-content .home-btn-action .btn {
+        margin: 0 20px; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.navbar {
+  flex-flow: column; }
+  .navbar .navbar-brand {
+    background: #fff;
+    padding: 5px 25px;
+    border-radius: 0 0 25px 25px; }
+    .navbar .navbar-brand img {
+      margin-bottom: 7px; }
+    .navbar .navbar-brand .logo-text {
+      color: #5F41B6;
+      font-size: 14px;
+      letter-spacing: 4px; }
+      .navbar .navbar-brand .logo-text b {
+        font-family: 'Montserrat-Bold'; }
+  .navbar .navbar-collapse {
+    margin-top: 20px; }
+    .navbar .navbar-collapse .search-icon {
+      position: relative; }
+      .navbar .navbar-collapse .search-icon input {
+        padding: 5px 25px;
+        border: 0;
+        position: relative; }
+        .navbar .navbar-collapse .search-icon input::placeholder {
+          text-align: center; }
+      .navbar .navbar-collapse .search-icon:after {
+        content: '\1F50D';
+        position: absolute;
+        left: 10px;
+        font-size: 16px;
+        top: 3px;
+        color: #BCBCCB; }
+  .navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 10px; }
+  .navbar .navbar-nav li.active {
+    border-bottom: 2px solid #fff; }
+
+.articles-section .articles-box-wrapper .articles-box {
+  box-shadow: 0px 3px 6px #00000029; }
+  .articles-section .articles-box-wrapper .articles-box .articles-content {
+    position: relative;
+    padding: 20px 10px; }
+  .articles-section .articles-box-wrapper .articles-box .artist-icon {
+    width: 37px;
+    position: absolute;
+    right: 25px;
+    top: 10px; }
+  .articles-section .articles-box-wrapper .articles-box h4 {
+    font-family: 'Montserrat-Bold';
+    font-size: 14px; }
+  .articles-section .articles-box-wrapper .articles-box p {
+    font-size: 12px; }
+  .articles-section .articles-box-wrapper .articles-box i {
+    font-style: normal;
+    font-family: 'Montserrat-Medium';
+    position: absolute;
+    right: 15px;
+    top: 0;
+    line-height: normal;
+    background: #E8E8E8;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    padding: 2px 9px; }
+
+.playlist-wrapper .playlist-content {
+  box-shadow: 0px 3px 6px #00000029;
+  margin-bottom: 20px;
+  min-height: 44vw; }
+  .playlist-wrapper .playlist-content .playsong {
+    padding: 20px; }
+  .playlist-wrapper .playlist-content h3 {
+    font-family: 'Montserrat-Bold';
+    font-size: 22px;
+    margin: 0 0 5px; }
+  .playlist-wrapper .playlist-content .btn {
+    margin-top: 15px;
+    border-radius: 0;
+    color: #4E4E4E;
+    border-color: #4E4E4E; }
+    .playlist-wrapper .playlist-content .btn i {
+      color: #4E4E4E; }
+  .playlist-wrapper .playlist-content .songs-list {
+    margin-top: 20px;
+    padding-left: 0; }
+    .playlist-wrapper .playlist-content .songs-list li {
+      color: #848587;
+      padding: 8px 20px;
+      border-bottom: 1px solid #f2f2f2; }
+      .playlist-wrapper .playlist-content .songs-list li div:first-child i {
+        color: #838D8F; }
+      .playlist-wrapper .playlist-content .songs-list li i {
+        color: #333;
+        margin-right: 15px;
+        font-size: 20px; }
+
+.playlist-wrapper .playlist-info-wrapper {
+  box-shadow: 0px 3px 6px #00000029;
+  margin-bottom: 20px; }
+  .playlist-wrapper .playlist-info-wrapper .playlist-bg {
+    position: relative; }
+    .playlist-wrapper .playlist-info-wrapper .playlist-bg a {
+      text-decoration: none;
+      text-align: center;
+      width: 220px;
+      padding: 5px 20px;
+      background: rgba(0, 0, 0, 0.24);
+      color: #fff;
+      border-radius: 15px; }
+  .playlist-wrapper .playlist-info-wrapper .playlist-info {
+    padding: 30px; }
+    .playlist-wrapper .playlist-info-wrapper .playlist-info h3 {
+      font-size: 18px;
+      font-family: 'Montserrat-Bold';
+      margin: 0 0 5px; }
+
+.playlist-wrapper .recommended-content {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 18px; }
+  .playlist-wrapper .recommended-content .recommended-text {
+    position: relative;
+    padding: 20px 10px; }
+  .playlist-wrapper .recommended-content h4 {
+    font-size: 14px;
+    font-family: 'Montserrat-Bold'; }
+  .playlist-wrapper .recommended-content p {
+    font-size: 12px; }
+  .playlist-wrapper .recommended-content i {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    color: #838D8F;
+    line-height: normal;
+    font-size: 20px;
+    padding: 0px 7px; }
+
+@media screen and (max-width: 767px) {
+  .col {
+    flex-basis: auto; }
+  .home-section {
+    flex-flow: column; }
+    .home-section header {
+      padding: 10px 0;
+      width: 100%;
+      background: #fff;
+      position: relative; }
+      .home-section header .logo-text {
+        display: none; }
+      .home-section header .navbar {
+        padding: 0 15px; }
+      .home-section header .navbar-brand {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 85px;
+        background: none;
+        margin: auto; }
+        .home-section header .navbar-brand img {
+          margin-bottom: 0; }
+      .home-section header .navbar-collapse {
+        padding: 20px 0;
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        top: 40px;
+        right: 0;
+        margin: 0;
+        background: white; }
+        .home-section header .navbar-collapse .nav-link {
+          color: #C6C6D4;
+          font-size: 13px;
+          text-align: center; }
+        .home-section header .navbar-collapse .search-icon {
+          margin: auto; }
+          .home-section header .navbar-collapse .search-icon input {
+            background: #F6F6F6; }
+          .home-section header .navbar-collapse .search-icon:after {
+            left: 20%; }
+      .home-section header .navbar-collapse.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column-reverse; }
+    .home-section .navbar {
+      flex-flow: row; }
+    .home-section .home-content {
+      margin-top: 40px;
+      padding: 0 20px 30px; }
+      .home-section .home-content .home-btn-action .btn {
+        margin-bottom: 20px; }
+  .playsong img {
+    margin-bottom: 20px; }
+  .content-section {
+    padding: 40px 20px; }
+  .articles-box, .recommended-content {
+    margin-bottom: 15px; } }
